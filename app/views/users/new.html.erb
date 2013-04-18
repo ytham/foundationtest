@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="small-10 large-6 columns">
+    New User
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-10 large-6 columns">
+    <%= form_for @user do |f| %>
+      <p>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+      </p>
+      <p>
+        <%= f.label :comment %>
+        <%= f.text_area :comment %>
+      </p>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>
+
+
+
